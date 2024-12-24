@@ -1,6 +1,7 @@
 {
   "projects": [
     {
+      "id": "1",
       "name": "ABHIMAT 2023",
       "date": "21st April 2023",
       "venue": "Seminar Hall, SPIT",
@@ -13,6 +14,7 @@
       }
     },
     {
+      "id": "2",
       "name": "ABHIMAT 2024",
       "date": "9th February 2024",
       "venue": "Seminar Hall (Room no : 119), SPCE",
@@ -24,6 +26,7 @@
       }
     },
     {
+      "id": "3",
       "name": "EPIC 2023",
       "date": "18th February 2023",
       "venue": "Sardar Patel Institute of Technology, Mumbai",
@@ -37,6 +40,7 @@
       }
     },
     {
+      "id": "4",
       "name": "WEBINAR 2022",
       "date": "18th February 2022",
       "venue": "Online",
@@ -48,6 +52,7 @@
       }
     },
     {
+      "id": "5",
       "name": "Blood Donation Drive 2023",
       "date": "27th October 2023",
       "venue": "SPIT Main Building, Room 008",
@@ -60,6 +65,7 @@
       }
     },
     {
+      "id": "6",
       "name": "Blood Donation Drive 2024",
       "date": "13th November 2024",
       "venue": "SPIT Main Building, Common Room",
@@ -71,6 +77,7 @@
       }
     },
     {
+      "id": "7",
       "name": "Cloth Donation Drive 2023",
       "date": "23rd October 2023",
       "venue": "SPIT Main Building, Room 008",
@@ -83,6 +90,7 @@
       }
     },
     {
+      "id": "8",
       "name": "Project Unnati",
       "objective": "To uplift underprivileged children by providing primary education and meals, and create an innovative app to support secondary school students in rural areas.",
       "overview": "A flagship initiative by Enactus S.P.I.T. aimed at providing education and nourishment to children across India, focusing on both immediate and long-term goals like bridging the education gap through technology.",
@@ -92,6 +100,7 @@
       }
     },
     {
+      "id": "9",
       "name": "Project Prithvi",
       "objective": "To tackle environmental issues by promoting sustainable alternatives to plastic.",
       "overview": "An initiative aimed at encouraging the use of eco-friendly materials and reducing plastic consumption, supported by workshops and collaborations with local artisans.",

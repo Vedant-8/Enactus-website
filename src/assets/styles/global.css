@@ -3,32 +3,24 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  font-size: 16px;
-}
-
-body {
-  font-family: 'Roboto', sans-serif;
-  background-color: #121212; /* Dark background for modern look */
-  color: #fff;
+/* Ensure the entire body has no margin/padding */
+body, html {
   margin: 0;
+  padding: 0;
+  background-color: #000; /* Set background to black */
+  height: 100%;
 }
 
-a {
-  text-decoration: none;
+/* Remove any default margin on the Container */
+.MuiContainer-root {
+  padding: 0;
 }
 
-.bg-primary {
-  background-color: #FFCC00;
+/* Optionally, make sure the navbar has a black background too */
+.navbar {
+  background-color: #000; /* Set the navbar background to black */
 }
 
-.text-primary {
-  color: #FFCC00;
-}
-
-.text-secondary {
-  color: #000000;
-}
 
 .card-shadow {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);

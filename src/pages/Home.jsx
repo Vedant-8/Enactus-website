@@ -1,9 +1,11 @@
+import projectsData from "../assets/data/projectsData.json";
 import React from "react";
 import { Carousel, Card } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
-    <div>
+    <div className="bg-dark text-white min-vh-100">
       {/* Hero Section */}
       <section className="hero bg-dark text-white h-screen flex items-center justify-center">
         <div className="text-center max-w-lg mx-auto">
@@ -17,65 +19,100 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Carousel Section using react-bootstrap */}
-      <section className="my-12">
-        <h2 className="text-center text-3xl font-bold mb-6">
-          Our Projects & Events
-        </h2>
-        <Carousel>
-          {/* Slide 1 */}
-          <Carousel.Item>
-            <Card className="h-64 bg-dark text-white">
-              <Card.Body className="text-center">
-                <h3 className="text-2xl font-bold">Project 1</h3>
-                <p>Objective of Project 1</p>
-              </Card.Body>
-            </Card>
-          </Carousel.Item>
+      {/* Wrapper div with gradient background */}
+      <div className="bg-gradient-to-b from-dark to-white py-12">
+        {/* Carousel Section */}
+        <section className="my-12">
+          <h2 className="text-center text-3xl font-bold mb-6">
+            Our Projects & Events
+          </h2>
+          <div style={{ position: "relative", padding: "0 10%" }}>
+            <Carousel
+              indicators={false}
+              controls={true}
+              interval={3000}
+              style={{ overflow: "visible" }}
+            >
+              {projectsData.projects.map((project, index) => (
+                <Carousel.Item key={index}>
+                  <div
+                    style={{
+                      width: "600px",
+                      height: "400px",
+                      margin: "0 auto",
+                      overflow: "hidden",
+                      position: "relative",
+                      transform: "scale(0.9)",
+                      transition: "transform 0.3s ease",
+                    }}
+                    className="carousel-card"
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.transform = "scale(1)";
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.transform = "scale(0.9)";
+                    }}
+                  >
+                    <Card
+                      className="bg-dark text-white d-flex flex-column justify-content-between align-items-center"
+                      style={{
+                        width: "100%",
+                        height: "100%",
+                        boxShadow: "0px 8px 15px rgba(0,0,0,0.3)",
+                        borderRadius: "12px",
+                        padding: "20px",
+                      }}
+                    >
+                      <Card.Body
+                        style={{
+                          display: "flex",
+                          flexDirection: "column",
+                          justifyContent: "center",
+                          alignItems: "center",
+                          textAlign: "center",
+                          height: "100%",
+                        }}
+                      >
+                        <h3
+                          className="text-2xl font-bold"
+                          style={{
+                            position: "absolute",
+                            top: "10%",
+                            transform: "translateY(-50%)",
+                          }}
+                        >
+                          {project.name}
+                        </h3>
+                        <p
+                          style={{
+                            marginTop: "auto",
+                            marginBottom: "auto",
+                          }}
+                        >
+                          {project.overview}
+                        </p>
+                      </Card.Body>
+                    </Card>
+                  </div>
+                </Carousel.Item>
+              ))}
+            </Carousel>
+          </div>
+        </section>
 
-          {/* Slide 2 */}
-          <Carousel.Item>
-            <Card className="h-64 bg-dark text-white">
-              <Card.Body className="text-center">
-                <h3 className="text-2xl font-bold">Project 2</h3>
-                <p>Objective of Project 2</p>
-              </Card.Body>
-            </Card>
-          </Carousel.Item>
-
-          {/* Slide 3 */}
-          <Carousel.Item>
-            <Card className="h-64 bg-dark text-white">
-              <Card.Body className="text-center">
-                <h3 className="text-2xl font-bold">Project 3</h3>
-                <p>Objective of Project 3</p>
-              </Card.Body>
-            </Card>
-          </Carousel.Item>
-        </Carousel>
-      </section>
-
-      {/* Team Section */}
-      <section className="my-12 px-4">
-        <h2 className="text-center text-3xl font-bold mb-6">Meet Our Team</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* Dummy Team Member Cards */}
-          <Card className="team-card rounded-lg shadow-lg p-4 bg-dark text-white">
-            <div className="h-32 bg-gray-500 mb-4"></div>
-            <Card.Body className="text-center">
-              <h3 className="font-semibold text-xl text-white">John Doe</h3>
-              <p className="text-center text-gray-300">President</p>
-            </Card.Body>
-          </Card>
-          <Card className="team-card rounded-lg shadow-lg p-4 bg-dark text-white">
-            <div className="h-32 bg-gray-500 mb-4"></div>
-            <Card.Body className="text-center">
-              <h3 className="font-semibold text-xl text-white">Jane Smith</h3>
-              <p className="text-center text-gray-300">Vice President</p>
-            </Card.Body>
-          </Card>
-        </div>
-      </section>
+        {/* Team Button Section */}
+        <section className="my-12 text-center">
+          <button
+            onClick={() => (window.location.href = "/team")} // This will redirect to the team page
+            className="inline-block px-8 py-4 text-lg font-bold text-black bg-yellow-500 rounded-lg transition-transform duration-300 ease-in-out hover:bg-yellow-600 hover:scale-105"
+            style={{
+              boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)",
+            }}
+          >
+            View Team Members
+          </button>
+        </section>
+      </div>
     </div>
   );
 };

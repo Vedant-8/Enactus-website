@@ -10,6 +10,7 @@ import Projects from "./pages/Projects";
 import Team from "./pages/Team";
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import './assets/styles/global.css'; 
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const App = () => {

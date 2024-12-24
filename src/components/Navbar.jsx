@@ -1,72 +1,61 @@
-import { AppBar, Toolbar, Typography, Button, Container } from "@mui/material";
+import { AppBar, Toolbar, Button, Container, Box } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const theme = useTheme();
+  const location = useLocation(); // To track the current page
 
   return (
-    <AppBar
-      position="sticky"
-      sx={{ backgroundColor: theme.palette.secondary.main }}
-    >
+    <AppBar position="sticky" sx={{ backgroundColor: "#000" }}>
       <Container maxWidth="lg">
         <Toolbar disableGutters>
-          <Typography
-            variant="h6"
-            sx={{
-              flexGrow: 1,
-              fontWeight: "bold",
-              color: theme.palette.primary.main,
-            }}
-          >
-            Enactus SPIT
-          </Typography>
-          <div className="flex space-x-4">
-            <Button
-              component={Link}
-              to="/"
-              sx={{ color: theme.palette.primary.main }}
-            >
-              Home
-            </Button>
-            <Button
-              component={Link}
-              to="/projects"
-              sx={{ color: theme.palette.primary.main }}
-            >
-              Projects
-            </Button>
-            <Button
-              component={Link}
-              to="/team"
-              sx={{ color: theme.palette.primary.main }}
-            >
-              Team
-            </Button>
-            <Button
-              component={Link}
-              to="/events"
-              sx={{ color: theme.palette.primary.main }}
-            >
-              Events
-            </Button>
-            <Button
-              component={Link}
-              to="/about"
-              sx={{ color: theme.palette.primary.main }}
-            >
-              About
-            </Button>
-            <Button
-              component={Link}
-              to="/contact"
-              sx={{ color: theme.palette.primary.main }}
-            >
-              Contact
-            </Button>
-          </div>
+          {/* Clickable Logo */}
+          <Box sx={{ flexGrow: 1 }}>
+            <Link to="/" style={{ display: "inline-block" }}>
+              <img
+                src="/images/logos/logo3.png"
+                alt="Enactus Logo"
+                style={{
+                  height: "40px",
+                  transition: "transform 0.3s ease",
+                }}
+                onMouseOver={(e) => (e.target.style.transform = "scale(1.1)")}
+                onMouseOut={(e) => (e.target.style.transform = "scale(1)")}
+              />
+            </Link>
+          </Box>
+
+          {/* Navigation Links */}
+          <Box display="flex" gap={2}>
+            {[
+              { label: "Home", path: "/" },
+              { label: "Projects", path: "/projects" },
+              { label: "Team", path: "/team" },
+              { label: "Events", path: "/events" },
+              { label: "About", path: "/about" },
+              { label: "Contact", path: "/contact" },
+            ].map((item) => (
+              <Button
+                key={item.label}
+                component={Link}
+                to={item.path}
+                sx={{
+                  color: location.pathname === item.path ? "#FFCC00" : "#fff",
+                  fontWeight:
+                    location.pathname === item.path ? "bold" : "normal",
+                  transition: "all 0.3s ease",
+                  "&:hover": {
+                    color: "#FFCC00",
+                    transform: "scale(1.05)",
+                  },
+                }}
+              >
+                {item.label}
+              </Button>
+            ))}
+          </Box>
         </Toolbar>
       </Container>
     </AppBar>
