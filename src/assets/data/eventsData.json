@@ -1,0 +1,28 @@
+{
+  "events": [
+    {
+      "id": "1",
+      "name": "ABHIMAT 2023",
+      "date": "21st April 2023",
+      "overview": "A dynamic Lok Sabha debate event that engages participants on national issues, with a ₹10,000 prize pool."
+    },
+    {
+      "id": "2",
+      "name": "EPIC 2023",
+      "date": "18th February 2023",
+      "overview": "Pitch competition for aspiring entrepreneurs with a ₹10,000 prize pool."
+    },
+    {
+      "id": "3",
+      "name": "WEBINAR 2022",
+      "date": "18th February 2022",
+      "overview": "Webinar on Social Entrepreneurship and Sustainable Disposal of E-Waste."
+    },
+    {
+      "id": "4",
+      "name": "Blood Donation Drive 2023",
+      "date": "27th October 2023",
+      "overview": "A community initiative to collect over 100 units of blood."
+    }
+  ]
+}

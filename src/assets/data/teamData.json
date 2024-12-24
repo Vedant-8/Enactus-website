@@ -1,0 +1,24 @@
+{
+  "teamMembers": [
+    {
+      "name": "John Doe",
+      "role": "President",
+      "photo": "/images/john_doe.jpg"
+    },
+    {
+      "name": "Jane Smith",
+      "role": "Vice President",
+      "photo": "/images/jane_smith.jpg"
+    },
+    {
+      "name": "Alice Brown",
+      "role": "Project Manager",
+      "photo": "/images/alice_brown.jpg"
+    },
+    {
+      "name": "Bob Green",
+      "role": "Event Coordinator",
+      "photo": "/images/bob_green.jpg"
+    }
+  ]
+}
