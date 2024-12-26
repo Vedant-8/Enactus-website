@@ -31,7 +31,7 @@ const ProjectCard = ({ project }) => {
       <CardMedia
         component="img"
         height="140"
-        image={project.imageUrl} // Assuming you have imageUrl in your project data
+        image={project.photo} // Corrected the image property name to `photo`
         alt={project.name}
       />
 
@@ -55,16 +55,18 @@ const ProjectCard = ({ project }) => {
         </Typography>
 
         {/* Date & Venue */}
-        <Typography
-          variant="body2"
-          color="text.secondary"
-          sx={{
-            marginTop: 1,
-            color: "white", // White text for date and venue
-          }}
-        >
-          {project.date} | {project.venue}
-        </Typography>
+        {project.date && project.venue && (
+          <Typography
+            variant="body2"
+            color="text.secondary"
+            sx={{
+              marginTop: 1,
+              color: "white", // White text for date and venue
+            }}
+          >
+            {project.date} | {project.venue}
+          </Typography>
+        )}
 
         {/* Project Overview */}
         <Typography

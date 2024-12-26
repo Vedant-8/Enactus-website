@@ -1,24 +1,148 @@
 {
   "teamMembers": [
     {
-      "name": "John Doe",
+      "id": 1,
+      "name": "Muneeb Shaikh",
       "role": "President",
-      "photo": "/images/john_doe.jpg"
+      "photo": "/images/muneeb_shaikh.jpg"
     },
     {
-      "name": "Jane Smith",
+      "id": 2,
+      "name": "Vir Bhalani",
       "role": "Vice President",
-      "photo": "/images/jane_smith.jpg"
+      "photo": "/images/vir_bhalani.jpg"
     },
     {
-      "name": "Alice Brown",
-      "role": "Project Manager",
-      "photo": "/images/alice_brown.jpg"
+      "id": 3,
+      "name": "Bhargav Dharap",
+      "role": "Treasurer",
+      "photo": "/images/bhargav_dharap.jpg"
     },
     {
-      "name": "Bob Green",
-      "role": "Event Coordinator",
-      "photo": "/images/bob_green.jpg"
+      "id": 4,
+      "name": "Kartik Rane",
+      "role": "Project Director",
+      "photo": "/images/kartik_rane.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Riya Dahat",
+      "role": "PR Head",
+      "photo": "/images/riya_dahat.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Dev Rai",
+      "role": "PR Head",
+      "photo": "/images/dev_rai.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Hemangi Sagbhor",
+      "role": "PR Head",
+      "photo": "/images/hemangi_sagbhor.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Arushi Jain",
+      "role": "PR Head",
+      "photo": "/images/arushi_jain.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Miheera Nikam",
+      "role": "Creatives Head",
+      "photo": "/images/miheera_nikam.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Yashwant Jadhav",
+      "role": "Creatives Head",
+      "photo": "/images/yashwant_jadhav.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Fatima",
+      "role": "Creatives Head",
+      "photo": "/images/fatima.jpg"
+    },
+    {
+      "id": 12,
+      "name": "Vedant Kulkarni",
+      "role": "Technical Head",
+      "photo": "/images/vedant_kulkarni.jpg"
+    },
+    {
+      "id": 13,
+      "name": "Atharva Bodake",
+      "role": "Event Head",
+      "photo": "/images/atharva_bodake.jpg"
+    },
+    {
+      "id": 14,
+      "name": "Tanay Patel",
+      "role": "Event Head",
+      "photo": "/images/tanay_patel.jpg"
+    },
+    {
+      "id": 15,
+      "name": "Yash Patil",
+      "role": "Event Head",
+      "photo": "/images/yash_patil.jpg"
+    },
+    {
+      "id": 16,
+      "name": "Abhijit Khambekar",
+      "role": "Event Head",
+      "photo": "/images/abhijit_khambekar.jpg"
+    },
+    {
+      "id": 17,
+      "name": "Rameshwari Chaudhary",
+      "role": "Project Head",
+      "photo": "/images/rameshwari_chaudhary.jpg"
+    },
+    {
+      "id": 18,
+      "name": "Yash Jadhav",
+      "role": "Project Head",
+      "photo": "/images/yash_jadhav.jpg"
+    },
+    {
+      "id": 19,
+      "name": "Dwayne Fernandes",
+      "role": "Head of Operations",
+      "photo": "/images/dwayne_fernandes.jpg"
+    },
+    {
+      "id": 20,
+      "name": "Rishi Kothari",
+      "role": "Head of Operations",
+      "photo": "/images/rishi_kothari.jpg"
+    },
+    {
+      "id": 21,
+      "name": "Preyansh Mehta",
+      "role": "Marketing Head",
+      "photo": "/images/preyansh_mehta.jpg"
+    },
+    {
+      "id": 22,
+      "name": "Yatharth Dodal",
+      "role": "Marketing Head",
+      "photo": "/images/yatharth_dodal.jpg"
+    },
+    {
+      "id": 23,
+      "name": "Aayush Shah",
+      "role": "Marketing Head",
+      "photo": "/images/aayush_shah.jpg"
+    },
+    {
+      "id": 24,
+      "name": "Vinay Racha",
+      "role": "Finance Head",
+      "photo": "/images/vinay_racha.jpg"
     }
   ]
 }

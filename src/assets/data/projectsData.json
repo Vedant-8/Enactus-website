@@ -2,15 +2,15 @@
   "projects": [
     {
       "id": "1",
-      "name": "ABHIMAT 2023",
-      "date": "21st April 2023",
-      "venue": "Seminar Hall, SPIT",
-      "objective": "To encourage intellectual engagement and provide a platform for participants to express their views on pressing national issues.",
-      "overview": "ENACTUS SPIT, in collaboration with IEEE WIE SPIT and IIC SPIT, organized Abhimat: The Lok Sabha Debate, a dynamic event held in the Seminar Hall of S.P.I.T. Participants showcased their debating prowess, gained knowledge on diverse topics, and networked with like-minded individuals. With a prize pool exceeding ₹10,000, the event saw enthusiastic participation, leaving a lasting impact on all attendees.",
+      "name": "Blood Donation Drive 2024",
+      "date": "13th November 2024",
+      "venue": "SPIT Main Building, Common Room",
+      "objective": "To collect over 120 units of blood to address critical medical needs.",
+      "overview": "In collaboration with Minatai Blood Bank, the event collected over 170 units of blood, exceeding its initial target and reflecting the community's generosity.",
+      "photo": "/images/blood_donation_2024.jpg",
       "keyOutcomes": {
-        "prizePool": "₹10,000+",
-        "participation": "Enthusiastic students and attendees",
-        "impact": "Fostered intellectual growth and inspired democratic dialogue"
+        "unitsCollected": "170+",
+        "attendance": "170+"
       }
     },
     {
@@ -20,6 +20,7 @@
       "venue": "Seminar Hall (Room no : 119), SPCE",
       "objective": "To test and refine students' effective speaking, critical thinking, and communication skills while engaging in thoughtful discussions on pressing national issues.",
       "overview": "The Lok Sabha-style debate brought together students to deliberate on significant bills such as EWS reservation and the privatization of public sector companies. Organized collaboratively by IEEE WIE SPIT, IIC SPIT, and ENACTUS SPIT, the event provided a platform for students to showcase their debating skills and parliamentary acumen.",
+      "photo": "/images/abhimat_2024.jpg",
       "keyOutcomes": {
         "judges": ["Pooja Anandani", "Prof. Aditya Rajmane", "Mohit Sali"],
         "participants": "Took on the roles of political parties and engaged in thought-provoking discussions."
@@ -27,11 +28,54 @@
     },
     {
       "id": "3",
+      "name": "Blood Donation Drive 2023",
+      "date": "27th October 2023",
+      "venue": "SPIT Main Building, Room 008",
+      "objective": "To collect over 100 units of blood to meet medical needs.",
+      "overview": "A successful initiative that aimed to collect over 100 units of blood to support essential medical needs. The event saw an impressive turnout, fostering a sense of community.",
+      "photo": "/images/blood_donation_2023.jpg",
+      "keyOutcomes": {
+        "unitsCollected": "100+",
+        "attendance": "98 students, 6 faculty members, 15 external attendees",
+        "expenditure": "₹4300"
+      }
+    },
+    {
+      "id": "4",
+      "name": "Cloth Donation Drive 2023",
+      "date": "23rd October 2023",
+      "venue": "SPIT Main Building, Room 008",
+      "objective": "To collect over 250 units of various types of clothing for children.",
+      "overview": "The drive aimed to collect clothing for children in need. It was an overwhelming success with strong participation from students and faculty.",
+      "photo": "/images/cloth_donation_2023.jpg",
+      "keyOutcomes": {
+        "unitsCollected": "100+",
+        "attendance": "100 students, 6 faculty members",
+        "expenditure": "₹180"
+      }
+    },
+    {
+      "id": "5",
+      "name": "ABHIMAT 2023",
+      "date": "21st April 2023",
+      "venue": "Seminar Hall, SPIT",
+      "objective": "To encourage intellectual engagement and provide a platform for participants to express their views on pressing national issues.",
+      "overview": "ENACTUS SPIT, in collaboration with IEEE WIE SPIT and IIC SPIT, organized Abhimat: The Lok Sabha Debate, a dynamic event held in the Seminar Hall of S.P.I.T. Participants showcased their debating prowess, gained knowledge on diverse topics, and networked with like-minded individuals. With a prize pool exceeding ₹10,000, the event saw enthusiastic participation, leaving a lasting impact on all attendees.",
+      "photo": "/images/abhimat_2023.jpg",
+      "keyOutcomes": {
+        "prizePool": "₹10,000+",
+        "participation": "Enthusiastic students and attendees",
+        "impact": "Fostered intellectual growth and inspired democratic dialogue"
+      }
+    },
+    {
+      "id": "6",
       "name": "EPIC 2023",
       "date": "18th February 2023",
       "venue": "Sardar Patel Institute of Technology, Mumbai",
       "objective": "To inspire and empower budding entrepreneurs to pitch innovative social impact ideas and compete for a prize pool of Rs. 10,000.",
       "overview": "EPIC 2023, organized by ENACTUS S.P.I.T. in collaboration with IIC S.P.I.T., brought together aspiring entrepreneurs for a high-energy pitch competition inspired by Shark Tank. Teams of up to four members presented their social entrepreneurship ideas to a panel of distinguished judges.",
+      "photo": "/images/epic_2023.jpg",
       "keyOutcomes": {
         "prizePool": "₹10,000",
         "participants": "Teams from diverse disciplines enthusiastically presented their ideas.",
@@ -40,53 +84,16 @@
       }
     },
     {
-      "id": "4",
+      "id": "7",
       "name": "WEBINAR 2022",
       "date": "18th February 2022",
       "venue": "Online",
       "objective": "To inspire and educate future change makers on embracing social entrepreneurship and adopting sustainable e-waste management practices.",
       "overview": "ENACTUS S.P.I.T., in collaboration with the Institution’s Innovation Council (IIC), hosted a webinar on ‘Social Entrepreneurship and Sustainable Disposal of E-Waste’ featuring Mr. Pranshu Singhal.",
+      "photo": "/images/webinar_2022.jpg",
       "keyOutcomes": {
         "attendance": "An overwhelming response from students and external participants.",
         "impact": "Sparked deeper understanding of responsible entrepreneurship and motivated attendees."
-      }
-    },
-    {
-      "id": "5",
-      "name": "Blood Donation Drive 2023",
-      "date": "27th October 2023",
-      "venue": "SPIT Main Building, Room 008",
-      "objective": "To collect over 100 units of blood to meet medical needs.",
-      "overview": "A successful initiative that aimed to collect over 100 units of blood to support essential medical needs. The event saw an impressive turnout, fostering a sense of community.",
-      "keyOutcomes": {
-        "unitsCollected": "100+",
-        "attendance": "98 students, 6 faculty members, 15 external attendees",
-        "expenditure": "₹4300"
-      }
-    },
-    {
-      "id": "6",
-      "name": "Blood Donation Drive 2024",
-      "date": "13th November 2024",
-      "venue": "SPIT Main Building, Common Room",
-      "objective": "To collect over 120 units of blood to address critical medical needs.",
-      "overview": "In collaboration with Minatai Blood Bank, the event collected over 170 units of blood, exceeding its initial target and reflecting the community's generosity.",
-      "keyOutcomes": {
-        "unitsCollected": "170+",
-        "attendance": "170+"
-      }
-    },
-    {
-      "id": "7",
-      "name": "Cloth Donation Drive 2023",
-      "date": "23rd October 2023",
-      "venue": "SPIT Main Building, Room 008",
-      "objective": "To collect over 250 units of various types of clothing for children.",
-      "overview": "The drive aimed to collect clothing for children in need. It was an overwhelming success with strong participation from students and faculty.",
-      "keyOutcomes": {
-        "unitsCollected": "100+",
-        "attendance": "100 students, 6 faculty members",
-        "expenditure": "₹180"
       }
     },
     {
@@ -94,6 +101,7 @@
       "name": "Project Unnati",
       "objective": "To uplift underprivileged children by providing primary education and meals, and create an innovative app to support secondary school students in rural areas.",
       "overview": "A flagship initiative by Enactus S.P.I.T. aimed at providing education and nourishment to children across India, focusing on both immediate and long-term goals like bridging the education gap through technology.",
+      "photo": "/images/project_unnati.jpg",
       "keyOutcomes": {
         "beneficiaries": "7,328 children",
         "SDGAlignment": ["Goal 2: Zero Hunger", "Goal 4: Quality Education"]
@@ -104,6 +112,7 @@
       "name": "Project Prithvi",
       "objective": "To tackle environmental issues by promoting sustainable alternatives to plastic.",
       "overview": "An initiative aimed at encouraging the use of eco-friendly materials and reducing plastic consumption, supported by workshops and collaborations with local artisans.",
+      "photo": "/images/project_prithvi.jpg",
       "keyOutcomes": {
         "SDGAlignment": ["Goal 12: Responsible Consumption and Production"],
         "impact": "Raised awareness on plastic waste reduction."

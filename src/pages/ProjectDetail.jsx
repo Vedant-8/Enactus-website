@@ -6,6 +6,7 @@ import {
   Button,
   Card,
   CardContent,
+  CardMedia,
 } from "@mui/material";
 import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
@@ -50,8 +51,8 @@ const ProjectDetail = () => {
           onClick={() => navigate("/projects")}
           sx={{
             marginBottom: 2,
-            color: "black", // White text color for button
-            borderColor: "black", // White border for the button
+            color: "black", // Black text color for button
+            borderColor: "black", // Black border for the button
             "&:hover": {
               backgroundColor: "#FFCC00", // Yellow hover color
               color: "black", // Black text color on hover
@@ -63,7 +64,7 @@ const ProjectDetail = () => {
         </Button>
 
         {/* Project Title */}
-        <Box sx={{ marginBottom: 4 }}>
+        <Box sx={{ marginBottom: 4, textAlign: "center" }}>
           <Typography
             variant="h4"
             sx={{
@@ -77,31 +78,74 @@ const ProjectDetail = () => {
             variant="h6"
             color="text.secondary"
             sx={{
-              color: "black", // White color for subheading
+              color: "black", // Black color for subheading
             }}
           >
             {project.date} | {project.venue}
           </Typography>
         </Box>
 
-        {/* Overview Card */}
-        <Card
+        {/* Project Photo */}
+        <Box
           sx={{
+            display: "flex",
+            justifyContent: "center",
             marginBottom: 4,
-            backgroundColor: "#343a40", // Dark background for the card
-            "&:hover": {
-              boxShadow: 10, // Hover shadow effect
-              transform: "scale(1.02)", // Slight scale-up effect
-              transition: "transform 0.3s ease, box-shadow 0.3s ease",
-            },
+          }}
+        >
+          <CardMedia
+            component="img"
+            sx={{
+              borderRadius: 2,
+              maxHeight: 400,
+              maxWidth: "100%",
+              boxShadow: 3,
+            }}
+            image={project.photo} // Photo from project data
+            alt={project.name}
+          />
+        </Box>
+
+        {/* Unified Card with Objective, Overview, Outcomes */}
+        <Card
+          className="bg-dark"
+          sx={{
+            backgroundColor: "#343a40", // Dark background
+            color: "white",
+            marginBottom: 4,
+            padding: 2,
+            borderRadius: 2,
+            boxShadow: 3,
           }}
         >
           <CardContent>
+            {/* Objective Section */}
             <Typography
               variant="h6"
               sx={{
                 fontWeight: "bold",
-                color: "#FFCC00", // Yellow for "Overview" heading
+                color: "#FFCC00", // Yellow for headings
+                marginBottom: 2,
+              }}
+            >
+              Objective
+            </Typography>
+            <Typography
+              variant="body1"
+              sx={{
+                marginBottom: 4,
+              }}
+            >
+              {project.objective}
+            </Typography>
+
+            {/* Overview Section */}
+            <Typography
+              variant="h6"
+              sx={{
+                fontWeight: "bold",
+                color: "#FFCC00", // Yellow for headings
+                marginBottom: 2,
               }}
             >
               Overview
@@ -109,33 +153,19 @@ const ProjectDetail = () => {
             <Typography
               variant="body1"
               sx={{
-                marginTop: 2,
-                color: "white", // White text for the overview
+                marginBottom: 4,
               }}
             >
               {project.overview}
             </Typography>
-          </CardContent>
-        </Card>
 
-        {/* Key Outcomes Card */}
-        <Card
-          sx={{
-            marginBottom: 4,
-            backgroundColor: "#343a40", // Dark background for the card
-            "&:hover": {
-              boxShadow: 10, // Hover shadow effect
-              transform: "scale(1.02)", // Slight scale-up effect
-              transition: "transform 0.3s ease, box-shadow 0.3s ease",
-            },
-          }}
-        >
-          <CardContent>
+            {/* Key Outcomes Section */}
             <Typography
               variant="h6"
               sx={{
                 fontWeight: "bold",
-                color: "#FFCC00", // Yellow for "Key Outcomes" heading
+                color: "#FFCC00", // Yellow for headings
+                marginBottom: 2,
               }}
             >
               Key Outcomes
@@ -143,15 +173,7 @@ const ProjectDetail = () => {
             <ul>
               {Object.entries(project.keyOutcomes).map(([key, value]) => (
                 <li key={key}>
-                  <Typography
-                    variant="body1"
-                    sx={{
-                      color: "white", // White text for outcomes
-                    }}
-                  >
-                    <strong>{key}: </strong>
-                    {value}
-                  </Typography>
+                  <Typography variant="body1">{`${key}: ${value}`}</Typography>
                 </li>
               ))}
             </ul>
