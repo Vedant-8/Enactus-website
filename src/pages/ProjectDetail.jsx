@@ -20,6 +20,8 @@ const ProjectDetail = () => {
     (project) => project.id === projectId
   );
 
+  console.log(project.photo);
+
   if (!project) {
     return (
       <Container sx={{ marginTop: 4 }}>
@@ -100,9 +102,10 @@ const ProjectDetail = () => {
               maxHeight: 400,
               maxWidth: "100%",
               boxShadow: 3,
+              objectFit: "contain",
             }}
-            image={project.photo} // Photo from project data
-            alt={project.name}
+            image={`/${project.photo}`} 
+            alt = {project.name}
           />
         </Box>
 
