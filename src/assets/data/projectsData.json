@@ -7,7 +7,7 @@
       "venue": "SPIT Main Building, Common Room",
       "objective": "To collect over 120 units of blood to address critical medical needs.",
       "overview": "In collaboration with Minatai Blood Bank, the event collected over 170 units of blood, exceeding its initial target and reflecting the community's generosity.",
-      "photo": "images/projects/IMG_8278.PNG",
+      "photo": "images/projects/3.jpg",
       "keyOutcomes": {
         "unitsCollected": "170+",
         "attendance": "170+"
@@ -20,7 +20,7 @@
       "venue": "Seminar Hall (Room no : 119), SPCE",
       "objective": "To test and refine students' effective speaking, critical thinking, and communication skills while engaging in thoughtful discussions on pressing national issues.",
       "overview": "The Lok Sabha-style debate brought together students to deliberate on significant bills such as EWS reservation and the privatization of public sector companies. Organized collaboratively by IEEE WIE SPIT, IIC SPIT, and ENACTUS SPIT, the event provided a platform for students to showcase their debating skills and parliamentary acumen.",
-      "photo": "/images/abhimat_2024.jpg",
+      "photo": "images/projects/2.png",
       "keyOutcomes": {
         "judges": ["Pooja Anandani", "Prof. Aditya Rajmane", "Mohit Sali"],
         "participants": "Took on the roles of political parties and engaged in thought-provoking discussions."
@@ -33,7 +33,7 @@
       "venue": "SPIT Main Building, Room 008",
       "objective": "To collect over 100 units of blood to meet medical needs.",
       "overview": "A successful initiative that aimed to collect over 100 units of blood to support essential medical needs. The event saw an impressive turnout, fostering a sense of community.",
-      "photo": "/images/blood_donation_2023.jpg",
+      "photo": "images/projects/IMG_8278.PNG",
       "keyOutcomes": {
         "unitsCollected": "100+",
         "attendance": "98 students, 6 faculty members, 15 external attendees",
@@ -101,7 +101,7 @@
       "name": "Project Unnati",
       "objective": "To uplift underprivileged children by providing primary education and meals, and create an innovative app to support secondary school students in rural areas.",
       "overview": "A flagship initiative by Enactus S.P.I.T. aimed at providing education and nourishment to children across India, focusing on both immediate and long-term goals like bridging the education gap through technology.",
-      "photo": "/images/project_unnati.jpg",
+      "photo": "images/projects/5.png",
       "keyOutcomes": {
         "beneficiaries": "7,328 children",
         "SDGAlignment": ["Goal 2: Zero Hunger", "Goal 4: Quality Education"]
@@ -112,7 +112,7 @@
       "name": "Project Prithvi",
       "objective": "To tackle environmental issues by promoting sustainable alternatives to plastic.",
       "overview": "An initiative aimed at encouraging the use of eco-friendly materials and reducing plastic consumption, supported by workshops and collaborations with local artisans.",
-      "photo": "/images/project_prithvi.jpg",
+      "photo": "images/projects/4.png",
       "keyOutcomes": {
         "SDGAlignment": ["Goal 12: Responsible Consumption and Production"],
         "impact": "Raised awareness on plastic waste reduction."

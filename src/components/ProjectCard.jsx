@@ -30,8 +30,12 @@ const ProjectCard = ({ project }) => {
       {/* Card Image */}
       <CardMedia
         component="img"
-        height="140"
-        image={project.photo} // Corrected the image property name to `photo`
+        sx={{
+          height: 300, // Adjust height for vertical posters
+          width: "100%", // Ensure it fills the card's width
+          objectFit: "cover", // Fills the area by cropping excess
+        }}
+        image={project.photo}
         alt={project.name}
       />
 
